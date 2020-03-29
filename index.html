@@ -31,5 +31,24 @@
 			and x and y values e.g. width + x for right and height + y for bottom.
 		</p>
 		<div id="box" class="blue-box"></div>
+		<h3>Element Sizes and Positions</h3>
+		<p>
+			We can get specific information about an element such as size and position
+			information with offset and client properties. Using offsetTop and
+			offsetLeft properties give us the elements top and left positions based on
+			the browser coordinates. We can use clientTop and clientLeft to get the
+			top and left positions of the content inside the elements e.g. content
+			after borders. There is the offsetWidth and offsetHeight properties to get
+			the whole element size including borders etc. There is also clientWidth
+			and clientHeight to get the elements size excluding borders etc. We can
+			also check the actual broswer windows size using window.innerWidth and
+			window.innerHeight. To get the real available browser window size we can
+			use document.documentElement clientHeight or clientWidth properties.
+			Finally when elements are scrollabel we can check the scroll information
+			with scrollHeight and scrollTop. The scrollHeight property gives us the
+			total size of the element including the hidden height thats scrollable,
+			scrollTop gives us the number by how much the element has been scrolled 0
+			being no scroll.
+		</p>
 	</body>
 </html>

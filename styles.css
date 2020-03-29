@@ -1,5 +1,7 @@
 .blue-box {
-  width: 300px;
-  height: 200px;
-  background-color: blue;
+	width: 300px;
+	height: 200px;
+	background-color: skyblue;
+	color: black;
+	border: 10px solid darkblue;
 }
