@@ -23,3 +23,8 @@ console.log(box.clientWidth);
 console.log(box.clientHeight);
 console.log(box.scrollHeight);
 console.log(box.scrollTop);
+
+// scrolling
+box.scrollTo(0, 20);
+box.scrollBy(0, 40);
+box.scrollIntoView({ behavior: 'smooth' });
