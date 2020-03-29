@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="app.js"></script>
-    <title>More Browser APIs</title>
-  </head>
-  <body>
-    <h1>More Browser APIs</h1>
-    <h3>Data Attributes</h3>
-    <p>
-      Data attributes are attributes you can add to DOM elements to store extra
-      data such as strings, numbers or booleans. You define data atrributes in
-      HTML elements with the 'data-' attribute syntax followed by the name you
-      want to give the attrbiute. Data atrributes can be get or set in
-      JavaScript with the dataset property on HTMl elements followed by the data
-      atrribute name wthout the 'data-'.
-    </p>
-    <div class="data" data-extraInfo="info">Extra data</div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="app.js"></script>
+		<title>More Browser APIs</title>
+	</head>
+	<body>
+		<h1>More Browser APIs</h1>
+		<h3>Data Attributes</h3>
+		<p>
+			Data attributes are attributes you can add to DOM elements to store extra
+			data such as strings, numbers or booleans. You define data atrributes in
+			HTML elements with the 'data-' attribute syntax followed by the name you
+			want to give the attrbiute. Data atrributes can be get or set in
+			JavaScript with the dataset property on HTMl elements followed by the data
+			atrribute name wthout the 'data-'.
+		</p>
+		<div class="data" data-extraInfo="info">Extra data</div>
+		<h3>Element Box Dimensions</h3>
+		<p>
+			We can tet an elements box dimensions, position and coordinates in
+			JavaScript by using the getBoundingClientRect method. When we call this
+			method on an element we get that elements size(width, height), position
+			(top, left, bottom, right) and coordiantes (x, y). The coordinates system
+			is based on the way browsers render pages so from top to bottom in the y
+			and left to right in the x therefore that top left position is 0,0. The
+			right and bottom positons are a combination of the elemnts width, height
+			and x and y values e.g. width + x for right and height + y for bottom.
+		</p>
+		<div id="box" class="blue-box"></div>
+	</body>
 </html>
