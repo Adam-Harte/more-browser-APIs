@@ -69,3 +69,13 @@ console.log(history);
 // navigator
 console.log(navigator);
 console.log(navigator.userAgent);
+
+// Date
+const date = new Date();
+console.log(date);
+console.log(date.getDay());
+console.log(date.getMonth());
+console.log(date.getFullYear());
+
+const date2 = new Date('21/11/89');
+console.log(date2);
