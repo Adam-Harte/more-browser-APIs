@@ -28,3 +28,10 @@ console.log(box.scrollTop);
 box.scrollTo(0, 20);
 box.scrollBy(0, 40);
 box.scrollIntoView({ behavior: 'smooth' });
+
+// template tags
+const template = document.getElementById('template');
+const target = document.getElementById('target');
+const templateNodes = document.importNode(template.content, true);
+target.append(templateNodes);
+console.log(template.content);

@@ -61,5 +61,22 @@
 			behaviour for example to be smooth so that the scroll position update
 			animates.
 		</p>
+		<h3>Template Tags</h3>
+		<p>
+			The template html tag allows us to define a reusable chunk/template of
+			html markup. This is great to make resuable sections of html that we can
+			grab and import into nodes in JavaScript. We can use these template tags
+			in JavaScript by grabbing them with a DOM query and then via the content
+			property. To use the content in areas of html we can use the document
+			importNode method to pass the template tag content and get back the
+			returned nodes which we can then append or do whatever kind of addition we
+			want into to our html structure.
+		</p>
+		<template id="template">
+			<div>
+				<p>This is a reusable <strong>Template!</strong></p>
+			</div>
+		</template>
+		<div id="target"></div>
 	</body>
 </html>
