@@ -35,3 +35,12 @@ const target = document.getElementById('target');
 const templateNodes = document.importNode(template.content, true);
 target.append(templateNodes);
 console.log(template.content);
+
+// loadng scripts dynamically
+const analytics = document.createElement('script');
+analytics.src = 'analytcis.js';
+analytics.defer = true;
+
+document.getElementById('analytics-btn').addEventListener('click', () => {
+	document.head.append(analytics);
+});
