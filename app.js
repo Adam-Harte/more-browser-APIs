@@ -65,3 +65,7 @@ setTimeout(() => {
 // location and history
 console.log(location);
 console.log(history);
+
+// navigator
+console.log(navigator);
+console.log(navigator.userAgent);
