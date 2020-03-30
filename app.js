@@ -44,3 +44,20 @@ analytics.defer = true;
 document.getElementById('analytics-btn').addEventListener('click', () => {
 	document.head.append(analytics);
 });
+
+// timeouts and intervals
+const timeout = setTimeout(() => {
+	console.log('timeout!');
+}, 3000);
+
+const interval = setInterval(() => {
+	console.log('interval!');
+}, 5000);
+
+console.log(timeout);
+console.log(interval);
+
+setTimeout(() => {
+	clearTimeout(timeout);
+	clearInterval(interval);
+}, 15000);

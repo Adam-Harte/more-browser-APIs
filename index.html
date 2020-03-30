@@ -85,5 +85,20 @@
 			appending it to the document head.
 		</p>
 		<button id="analytics-btn">Run Analytics</button>
+		<h3>Timeouts and Intervals</h3>
+		<p>
+			We have the ability to use timers in JavaScript specifically two types of
+			timers. We can use timeouts and intervals. Timeouts allow us to run a
+			block of code once after the allotted time has passed. Intervals allows us
+			to run the same block of code every time the allotted time has passed. We
+			create these timers with the setTimeout and setInterval methods. Both
+			methods take a callback function which is the code we want to execute with
+			the timer and also an argument for the allotted time in miliseconds. These
+			methods also return an id we can store so that we can then cancel the
+			timers at a later point if we wish. These timers are an example of
+			asynchronous code as the code we want to execute doesnt execute right away
+			and instead gets pushed to the task queue which will wait for the stack to
+			be avaialble before moving that task to the stack.
+		</p>
 	</body>
 </html>
