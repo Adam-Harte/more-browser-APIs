@@ -61,3 +61,7 @@ setTimeout(() => {
 	clearTimeout(timeout);
 	clearInterval(interval);
 }, 15000);
+
+// location and history
+console.log(location);
+console.log(history);
